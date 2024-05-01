@@ -36,3 +36,30 @@ const myFunction = function(){
 
 //
 console.log(typeof myFunction); // output: function
+
+
+
+
+/* *************************** Memory ************************** */
+
+// 1. Stack memory:
+// used in primitive data types
+// Ex:-
+let myName = "Sajid"
+let anotherName = myName  // Passing by value
+anotherName = "Saajjid"
+console.log(myName); // output: Sajid
+console.log(anotherName); // output: Saajjid
+
+
+// 2. Heap memory:
+// used in non-primitive data types
+//Ex:-
+let userOne = {
+    email: "hello@google.com",
+    upi: "hello@ybl"
+}
+let userTwo = userOne  // Passing by reference
+userTwo.email = "hey@meta.com"
+console.log(userOne.email); // output: hey@meta.com
+console.log(userTwo.email); // output: hey@meta.com
