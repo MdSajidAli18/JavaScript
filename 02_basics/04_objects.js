@@ -61,3 +61,44 @@ console.log(Object.entries(InstaUser)); // output: [ [ 'id', '345xyz' ], [ 'name
 
 console.log(InstaUser.hasOwnProperty('name')); // output: true
 console.log(InstaUser.hasOwnProperty('password')); // output: false
+
+
+
+
+// Objects destructuring //
+
+const course = {
+    coursename: "JavaScript",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+const {courseInstructor} = course  // destructuring the object(course)
+console.log(courseInstructor); // output: Hitesh
+
+const {courseInstructor: Instructor} = course  // destructuring the object(course)
+console.log(Instructor); // output: Hitesh
+
+const {courseInstructor: Instrctr} = course  // destructuring the object(course)
+console.log(Instrctr); // output: Hitesh
+
+
+
+
+// JSON API//
+/*
+{
+    "name": "Hitesh",
+    "coursename": "Advanced JavaScript",
+    "price": "1999"
+}
+*/
+
+[
+    {},
+    {},
+    {}
+]
+
+
+
