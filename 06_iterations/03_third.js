@@ -29,6 +29,7 @@ console.log("\n");
 
 
 
+
 // Maps //
 // The Map object holds key-value pairs and remembers the original order of the keys. Any value(both objects and primitive values) may be used as either a key or a value.
 
@@ -45,3 +46,8 @@ console.log("\n");
 for (const [key, value] of map) {
     console.log(key,'-->',value);
 }
+
+
+
+
+// Note: use forof loop for Array and Maps.
