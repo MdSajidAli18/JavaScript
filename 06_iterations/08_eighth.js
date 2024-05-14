@@ -46,3 +46,14 @@ const shoppingCart = [
 const priceToPay = shoppingCart.reduce( (accumulator, item) => accumulator + item.price,  0)
 
 console.log(priceToPay);
+
+
+
+
+
+
+
+
+
+
+// Here we have completed the part-1 of Javascript video.
