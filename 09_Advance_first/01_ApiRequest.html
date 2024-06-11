@@ -1,0 +1,39 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body style="background-color: #212121;">
+        
+    </body>
+
+    <script>
+
+        const requestUrl = 'https://api.github.com/users/MdSajidAli18'
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl)
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState);
+            console.log("/n1");
+            if(xhr.readyState === 4){
+                console.log("/n");
+                console.log(this.responseText);
+                console.log("/n2");
+                const data = JSON.parse(this.responseText)
+                console.log(typeof data);
+                console.log("/n3");
+                console.log(data.following);
+            }
+        }
+        xhr.send();
+
+    </script>
+
+</html>
