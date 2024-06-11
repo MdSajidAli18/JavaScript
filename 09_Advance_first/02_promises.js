@@ -100,6 +100,8 @@ consumePromiseFive();
 
 
 //6.
+/*  https://developer.mozilla.org/en-US/docs/Web/API/fetch  */
+
 fetch('https://api.github.com/users/MdSajidAli18')
 .then((rEsponse) => {
     return rEsponse.json();
